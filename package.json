@@ -1,0 +1,22 @@
+{
+	"name": "opensource-test123",
+	"version": "1.0.0",
+	"description": "A test open source package",
+	"main": "./lib/cjs/index.js",
+	"types": "./lib/cjs/index.d.ts",
+	"module": "./lib/esm/index.js",
+	"files": [
+		"lib/"
+	],
+	"scripts": {
+		"test": "npm run test",
+		"clean": "rm -rf lib",
+		"build": "npm run clean && npx tsc -p tsconfig.json && npx tsc -p tsconfig-cjs.json",
+		"prepublishOnly": "npm run build"
+	},
+	"author": "Nicolas Graf",
+	"license": "MIT",
+	"devDependencies": {
+		"typescript": "^4.6.3"
+	}
+}
