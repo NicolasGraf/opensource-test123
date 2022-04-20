@@ -5,6 +5,7 @@
 	"main": "./lib/cjs/index.js",
 	"types": "./lib/cjs/index.d.ts",
 	"module": "./lib/esm/index.js",
+	"repository": "https://github.com/NicolasGraf/opensource-test123",
 	"files": [
 		"lib/"
 	],
